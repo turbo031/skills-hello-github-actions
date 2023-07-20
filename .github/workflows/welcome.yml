@@ -2,6 +2,9 @@ name: Post welcome comment and sed
 on:
   pull_request:
     types: [opened]
+  push:
+    branches:
+      - "*"
 permissions:
   pull-requests: write
 jobs:
