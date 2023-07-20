@@ -1,7 +1,10 @@
-name: Post welcome comment
+name: Post welcome comment and sed
 on:
   pull_request:
     types: [opened]
+  push:
+    branches:
+      - "*"
 permissions:
   pull-requests: write
 jobs:
@@ -17,4 +20,4 @@ jobs:
     name: Install sed
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install sed
+      - run: sudo apt-get install sed
