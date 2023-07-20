@@ -17,4 +17,4 @@ jobs:
     name: Install sed
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install sed
+      - run: sudo apt-get install sed
