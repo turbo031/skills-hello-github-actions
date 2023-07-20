@@ -1,4 +1,4 @@
-name: Post welcome comment
+name: Post welcome comment and sed
 on:
   pull_request:
     types: [opened]
